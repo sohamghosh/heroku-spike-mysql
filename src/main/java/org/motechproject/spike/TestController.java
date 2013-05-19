@@ -19,8 +19,8 @@ public class TestController {
     }
 
     @ResponseBody
-    @RequestMapping("/find")
-    private String find() {
-        return service.find();
+    @RequestMapping("/count")
+    private String count() {
+        return service.count();
     }
 }

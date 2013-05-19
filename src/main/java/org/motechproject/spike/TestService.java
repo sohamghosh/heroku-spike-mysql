@@ -18,7 +18,7 @@ public class TestService {
         return "(MySQL) Created.";
     }
 
-    public String find() {
+    public String count() {
         long count = jdbcTemplate.queryForLong("SELECT COUNT(*) FROM USER");
         return "(MySQL) Count: " + count;
     }
